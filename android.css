@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bitcount+Grid+Double:wght@100..900&family=Chiron+Sung+HK:ital,wght@0,200..900;1,200..900&family=Manufacturing+Consent&display=swap');
+
+@font-face {
+    font-family: 'Android';
+    src: url(fontes/idroid.otf) format('opentype');
+    font-weight: normal;
+}
+
+:root {
+    --cor00:#A2BF39;
+    --cor01:#67733C;
+    --cor02:#B3BF56;
+    --cor03:#F2F2F2;
+    --cor04:#0D0D0D;
+    --cor05:black;
+
+    --fonte-padrão: Arial,Verdana,Helvetica,sans-serif;
+    --fonte-destaque:'Bebas Neue', cursive;
+    --fonte-android: 'Android', cursive;
+}
+
+body {
+    background-color: var(--cor02);
+    font-family: var(--fonte-padrão);
+}
+
+header {
+    background-color: var(--cor01);
+    min-height: 150px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+header > h1 {
+    color: white;
+    font-family: var(--fonte-destaque);
+    font-size: 3em;
+    padding-top: 40px;
+    margin-bottom: 20px;
+
+}
+
+header > p {
+    font-family: var(--fonte-padrão);
+    font-size: 1.2em;
+    color: white;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #233323c7;
+    padding: 10px;
+}
+
+nav > a {
+    text-align: center;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bolder;
+    border-radius: 5px;
+    margin: 0px 40px;
+}
+
+nav > a:hover {
+    background-color: yellowgreen;
+
+
+}
+
+p {
+    margin: 15px;
+    text-align: justify;
+}
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    line-height: 2em; /*define a altura da linha de um texto*/
+}
+
+main img {
+    width: 100%; /*Faz com que a largura dessas imagens sejam 100% da largura do elemento pai (no caso, o <main>)*/
+}
+
+main img.pequena {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+main h1 {
+    color: black;
+    font-family: var(--fonte-android);
+}
+main h2 {
+    font-family: var(--fonte-android);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+div.video {
+    background-color: #000000;
+    position: relative;
+    padding-bottom: 50%;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+
+}
+
+aside > ul {
+    list-style-position: inside; /*outside (padrão): o marcador (bola, número, etc.) fica fora da caixa de texto, na margem da lista. O texto quebras alinha-se sempre depois do marcador.
+
+    inside: o marcador fica dentro da caixa de texto, ou seja, o marcador faz parte do fluxo do texto. Quando o texto quebra para a próxima linha, ele alinha com o marcador.*/
+}
+
+footer {
+    background-color: var(--cor02);
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+footer p {
+    text-align: center;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+
+
+
+
